@@ -1,0 +1,27 @@
+.allStore_mainCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 222px;
+    height: 148px; */
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 2px;
+}
+
+.upper_allStoreCard_Img{
+    width: 148px;
+    height: 73px;
+}
+
+.lower_allStoreCard{
+    border-top: 1px solid #F2F2F2;
+}
+
+.lower_allStoreCard_spn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+}

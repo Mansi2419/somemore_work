@@ -1,93 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
-<style>
-    /* practice css */
-    .mainCont {
-        width: 100vw;
-        height: 100vh;
+
+<style type="text/css">
+    .mainContainer {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
+        height: 100%;
     }
 
-    /* practice css */
 
 
-    /* page css */
-
-    .gm_all_str {
-        min-height: 500px;
-        background: white;
-        padding: 16px 14px;
-        box-sizing: border-box;
-    }
-
-    .search-container {
-        width: 322px;
-        height: 32px;
-        background: rgba(196, 196, 196, 0.2);
-        border-radius: 6px;
+    .godaddy_image_coupon {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        padding-bottom: 45px;
+        border-bottom: 4px solid #e5e5e5;
+        padding-top: 18px;
     }
 
-    .search_container_image {
-        width: 24px;
+    .godaddy_imgcrds {
+        margin-right: 10px;
     }
 
-    .input_earch_container {
-        text-align: center;
-        border: transparent;
-        background: rgba(232, 232, 237, 0.87);
-        opacity: 0.25;
-        font-family: "Poppins";
+    .image_coupons {
+        width: 56px;
+        height: 56px;
+    }
+
+    .godaddy_heading {
+        font-family: 'Poppins';
         font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        color: #000000;
+        font-weight: 600;
+        font-size: 22px;
+        color: #0E1D4A;
+        margin-right: 36px;
     }
 
-    textarea:focus,
-    input:focus {
-        outline: none;
+    .flag_coupons_image {
+        display: flex;
+        justify-content: space-between;
     }
 
-    .container_allstore {
-        margin-top: 44px;
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 10px;
-        margin-left: 14px;
-        margin-right: 14px;
+    .flag_coupons {
+        width: 12px;
+        height: 12px;
+        margin-top: 2px;
+        margin-right: 5px;
     }
 
-    /* page css */
+    .flag_coupons_heading {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        color: #0E1D4A;
+    }
+
+    .homepage_visit {
+        width: 78px;
+        height: 22px;
+        border: 1px solid rgba(14, 29, 74, 0.25);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .visit_store {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 9px;
+        color: #0E1D4A;
+    }
+
+    .visit_store_image {
+        width: 18px;
+        height: 18px;
+    }
 </style>
 
 <body>
-    <div class="mainCont">
+    <div class="mainContainer">
 
-        <!-- write your code here -->
-        <div class="gm_all_str">
-            <div class="search-container">
-                <img src="/image/Search_alt.png" class="search_container_image">
-                <input type="text" class="input_earch_container" placeholder="Search Store Name Here">
+
+        <div class="godaddy_image_coupon">
+            <div class="godaddy_imgcrds">
+                <img src="image/Ellipse 233.png" class="image_coupons">
             </div>
-            <div class="container_allstore"></div>
+            <div class="godaddy_heading">
+                <span>GoDaddy</span>
+                <div class="flag_coupons_image">
+                    <img src="image/ic_outline-discount.png" class="flag_coupons">
+                    <span class="flag_coupons_heading">12 Coupons Available </span>
+                </div>
+            </div>
+            <div class="visit_home_input">
+                <button class="homepage_visit">
+                    <img src="image/Shop_light.png" class="visit_store_image">
+                    <span class="visit_store">Visit Store</span>
+                </button>
+            </div>
         </div>
-        <!-- write your code here -->
+
 
 
     </div>
