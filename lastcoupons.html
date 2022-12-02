@@ -23,6 +23,10 @@
     margin-top: 18px;
     background: rgba(14, 29, 74, 0.03);
     border: 1px dashed rgba(14, 29, 74, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px 0px 12px;
 }
 .coupons_line_based {
     margin-top: 5px;
@@ -38,8 +42,6 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    margin-left: 12px;
-    margin-bottom: 0px;
 }
 
 .coupons_E15RTU_para {
@@ -53,9 +55,19 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     color: rgba(14, 29, 74, 0.5);
-    margin-left: 12px;
     margin-top: 7px;
-    margin-bottom: 0px;
+}
+
+.couponsCopied{
+    text-align: center;
+    align-items: center;
+}
+.couponsCopied_spn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    color: #2158D7;
 }
 
 /*  available coupons */
@@ -66,6 +78,11 @@
     margin-top: 18px;
     background: rgba(14, 29, 74, 0.03);
     border: 1px solid rgba(14, 29, 74, 0.25);
+    padding: 0px 12px 0px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 /*  available coupons */
 </style>
@@ -78,6 +95,9 @@
                 <span class="coupons_E15RTU">E15RTU </span>
                 <p class="coupons_E15RTU_para">Extra 15% on all products</p>
             </div>
+            <div class="couponsCopied">
+                <span class="couponsCopied_spn">Copied</span>
+            </div>
         </div>
         <!-- last successful coupons -->
 
@@ -89,6 +109,9 @@
             <div class="coupons_line_based">
                 <span class="coupons_E15RTU">E15RTU </span>
                 <p class="coupons_E15RTU_para">Extra 15% on all products</p>
+            </div>
+            <div class="couponsCopied">
+                <span class="couponsCopied_spn">Copied</span>
             </div>
         </div>
         <!-- available coupons -->
