@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,44 +8,125 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+
     <title>Document</title>
 </head>
 <style>
-.notifyMain{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-}
+    /* today card */
 
-.notification_para {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 32px;
-    text-align: center;
-    text-transform: capitalize;
-    color: #0E1D4A;
-    margin-top: 49px;
-}
+    .notify_title_spn{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .notify_title{
+        width: 350px;
+        height: 36px;
+    }
+    /* today card */
 
-.empty_notification_gif {
-    width: 268px;
-    height: 268px;
-}
+
+    /* notification cards */
+
+    .notify_crd{
+        width: 350px;
+        border-bottom: 2px solid rgba(229, 229, 229, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .notify_crds_imgdiv{
+        padding-right: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .notify_crdsimg{
+        position: relative;
+    }
+    .notify_crds_logoimg{
+        border-radius: 100%;
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .notify_crdlogo{
+        width: 14px;
+        height: 14px;
+        border-radius: 100%;
+        background: #E2341C;
+        position: absolute;
+        top: 0px;
+        right: -1px;
+    }
+    .notify_crds_para_div{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    /* notification cards */
 </style>
-<body>
-    <div class="notifyMain">
 
-            <div class="notification_para">
-                <span>It looks like you don’t have any notifications yet.</span>
+<body>
+     <!-- today card -->
+     <div class="notify_wrapper">
+            <div class="notify_title">
+                <span class="notify_title_spn">Today </span>
             </div>
-            <div class="cat_gif_notification">
-                <img src="image/empty-notifications.gif" class="empty_notification_gif">
+            <div class="notify_empty">
+                <!-- notification cards  -->
+
+    <div class="notify_crd">
+        <div class="notify_crds_imgdiv">
+            <div class="notify_crdsimg">
+                <img src="image/Ellipse 233.png" class="notify_crds_logoimg">
+                <div class="notify_crdlogo"></div>
             </div>
         </div>
+        <div class="notify_crds_para">
+            <p class="notify_crds_para_div">There is a sale going on GoDaddy,
+                You can save upto 25%</p>
+        </div>
+    </div>
+    <div class="notify_crd">
+        <div class="notify_crds_imgdiv">
+            <div class="notify_crdsimg">
+                <img src="image/Amazon-logo-meaning.jpg" class="notify_crds_logoimg">
+                <div class="notify_crdlogo"></div>
+            </div>
+        </div>
+        <div class="notify_crds_para">
+            <p class="notify_crds_para_div">Flipkart Big Billion days Sale is live, Get
+                exciting offers on your favorite products.</p>
+        </div>
+    </div>
+    <!-- notification cards  -->
+            </div>
+     </div>
+    <!-- today card -->
+    
+   
 </body>
+
 </html>
