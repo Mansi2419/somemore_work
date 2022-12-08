@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+#accordian {
+  padding-left: 0px;
+  width: 336px;
+}
+
+#accordian li {
+  list-style: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-left: 14px;
+}
+
+#accordian li label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); */
+  border-radius: 8px;
+  margin-left: 7px;
+  border: none;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  width: 336px;
+
+}
+
+#accordian li label span {
+  transform: rotate(90deg);
+  font-size: 20px;
+  color: #333;
+  margin-right: 30px;
+  font-weight: bolder;
+}
+
+.image_amazon {
+  width: 61px;
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+#accordian label+input[type="radio"] {
+  display: none;
+}
+
+#accordian .content {
+  padding: 0 7px;
+  /* line-height: 26px; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  /* height: px; */
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+#accordian label+input[type="radio"]:checked+.content {
+  max-height: 400px;
+}
+
+.onepluse_phone_img {
+  width: 102px;
+  height: 90px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.one_Pluse {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #0E1D4A;
+  text-align: center;
+  margin-top: 8px;
+  margin-right: 98px;
+}
+
+.one_plus_time {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: #353232;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.oneplus_number {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: #D01313;
+}
+
+.amazon_content {
+  height: 100px;
+  /* background: pink; */
+}
+.amazon_main_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.select_dropdown {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 111px;
+  bottom: 61px;
+}
+
+.select_dropdown_1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-left: 212px;
+  bottom: 107px;
+}
+
+.select_varient {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #0E1D4A;
+  margin-bottom: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+.wishlist_dropdown {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  color: #0E1D4A;
+  border: 0.5px solid rgba(33, 88, 215, 0.75);
+  border-radius: 5px;
+}
+
+#wishlist_dropdown .select_dropdown_btn {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  color: #0E1D4A;
+  opacity: 0.5;
+}
+
+.expand_right {
+  width: 24px;
+  height: 24px;
+}
+</style>
+
+<body>
+    <ul id="accordian">
+        <li>
+            <label for="first"><img src="image/amazon_logo.png" class="image_amazon"><span><img
+                        src="image/Expand_right (1).png" class="expand_right"> </span>
+            </label>
+            <input type="radio" name="accordian" id="first">
+            <div class="content">
+                <div class="amazon_content">
+                    <div class="amazon_main_content">
+                        <div>
+                            <img src="image/Rectangle 2773 (1).png" class="onepluse_phone_img">
+                        </div>
+                        <div>
+                            <span class="one_Pluse">OnePlus 5T</span>
+                            <p class="one_plus_time">Starts in: <span class="oneplus_number"> 01d : 05h :
+                                    20m</span></p>
+                        </div>
+                    </div>
+                    <div class="select_dropdown">
+                        <div>
+                            <p class="select_varient">Select Varient</p>
+                            <form>
+                                <select class="wishlist_dropdown">
+                                    <option value="" disabled selected>--Select--</option>
+                                    <option value="Mer"> 4GB+64GB
+                                    </option>
+                                    <option value="Audi"> 6GB+128GB
+                                    </option>
+                                    <option value="Skoda">8GB+256GB
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="select_dropdown_1">
+                        <div>
+                            <p class="select_varient">Select Color</p>
+                            <form>
+                                <select class="wishlist_dropdown">
+                                    <option value="" disabled selected>--Select--</option>
+                                    <option value="Mer">Black
+                                    </option>
+                                    <option value="Audi"> Blue
+                                    </option>
+                                    <option value="Skoda">White
+                                    </option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
