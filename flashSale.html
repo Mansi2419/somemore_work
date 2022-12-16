@@ -2,241 +2,376 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
 <style>
-#accordian {
-  padding-left: 0px;
-  width: 336px;
-}
 
-#accordian li {
-  list-style: none;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 8px;
-  margin-bottom: 10px;
-  margin-left: 14px;
-}
+/* amazon and all product */
+  .accordian {
+    width: 336px;
+    padding: 0;
+  }
 
-#accordian li label {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15); */
-  border-radius: 8px;
-  margin-left: 7px;
-  border: none;
-  padding-bottom: 3px;
-  margin-bottom: 6px;
-  width: 336px;
+  .accordian li {
+    list-style: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+  }
 
-}
+  .accordian li label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: none;
+    width: 336px;
+    height: 36px;
+  }
 
-#accordian li label span {
-  transform: rotate(90deg);
-  font-size: 20px;
-  color: #333;
-  margin-right: 30px;
-  font-weight: bolder;
-}
+  .image_amazon {
+    width: 61px;
+    margin-left: 12px;
+  }
 
-.image_amazon {
-  width: 61px;
-  margin-left: 8px;
-  margin-top: 5px;
-}
+  .accordian label+input[type="radio"] {
+    display: none;
+  }
 
-#accordian label+input[type="radio"] {
-  display: none;
-}
+  .accordian .content {
+    padding: 0 4px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
 
-#accordian .content {
-  padding: 0 7px;
-  /* line-height: 26px; */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s;
-  /* height: px; */
-  background: #FFFFFF;
-  border-radius: 8px;
-}
+  .accordian label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+  }
 
-#accordian label+input[type="radio"]:checked+.content {
-  max-height: 400px;
-}
+  .contFlashSale{
+    display: flex;
+  }
+  .onepluse_phone_img {
+    width: 102px;
+    height: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-.onepluse_phone_img {
-  width: 102px;
-  height: 90px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
+  .one_Pluse {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #0E1D4A;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
-.one_Pluse {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  color: #0E1D4A;
-  text-align: center;
-  margin-top: 8px;
-  margin-right: 98px;
-}
+  .one_plus_time {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #353232;
+    margin: 0;
+  }
 
-.one_plus_time {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: #353232;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+  .oneplus_number {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #D01313;
+  }
 
-.oneplus_number {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: #D01313;
-}
+  .amazon_main_content {
+    width: 222px;
+    margin-top: 7px;
+    margin-left: 12px;
+  }
 
-.amazon_content {
-  height: 100px;
-  /* background: pink; */
-}
-.amazon_main_content {
-  display: flex;
-  justify-content: space-between;
-}
+  .amazon_content {
+    width: 106px;
+    height: 100px;
+  }
 
-.select_dropdown {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-left: 111px;
-  bottom: 61px;
-}
+  .dropdown_choose {
+    display: flex;
+    margin-top: 8px;
+  }
 
-.select_dropdown_1 {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  margin-left: 212px;
-  bottom: 107px;
-}
+  .select_varient {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #0E1D4A;
+    margin: 0;
+  }
 
-.select_varient {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  text-transform: capitalize;
-  color: #0E1D4A;
-  margin-bottom: 5px;
-}
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
-  outline: none;
-}
+  .wishlist_dropdown {
+    width: 69px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    text-transform: capitalize;
+    color: rgba(14, 29, 74, 0.5);
+    border: 0.5px solid rgba(33, 88, 215, 0.75);
+    border-radius: 2px;
+    margin-right: 12px;
+  }
 
-.wishlist_dropdown {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  color: #0E1D4A;
-  border: 0.5px solid rgba(33, 88, 215, 0.75);
-  border-radius: 5px;
-}
+  .expand_right {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
 
-#wishlist_dropdown .select_dropdown_btn {
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 10px;
-  display: flex;
-  align-items: center;
-  color: #0E1D4A;
-  opacity: 0.5;
-}
+  /* amazon and all product */
 
-.expand_right {
-  width: 24px;
-  height: 24px;
-}
+  /* subscribed product */
+
+  .subscribed_spn{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #0E1D4A;
+    margin: 6px 8px;
+  }
+
+  .subscribed_comp_logo{
+    width: 48px;
+    height: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 6px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .subs_desc_logo{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subs_desc_img{
+    width: 37px;
+    height: 11px;
+  }
+
+  .btn_subs_flash{
+    margin-top: 18px;
+  }
+
+  .edit_subs{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #2158D7;
+    border: none;
+    background: none;
+  }
+
+  .remove_subd{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #D01313;
+    border: none;
+    background: none;
+  }
+
+  .remove_subd1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #D01313;
+    border: none;
+    background: none;
+    margin-top: 17px;
+  }
+  /* subscribed product */
+
 </style>
 
 <body>
-    <ul id="accordian">
-        <li>
-            <label for="first"><img src="image/amazon_logo.png" class="image_amazon"><span><img
-                        src="image/Expand_right (1).png" class="expand_right"> </span>
-            </label>
-            <input type="radio" name="accordian" id="first">
-            <div class="content">
-                <div class="amazon_content">
-                    <div class="amazon_main_content">
-                        <div>
-                            <img src="image/Rectangle 2773 (1).png" class="onepluse_phone_img">
-                        </div>
-                        <div>
-                            <span class="one_Pluse">OnePlus 5T</span>
-                            <p class="one_plus_time">Starts in: <span class="oneplus_number"> 01d : 05h :
-                                    20m</span></p>
-                        </div>
-                    </div>
-                    <div class="select_dropdown">
-                        <div>
-                            <p class="select_varient">Select Varient</p>
-                            <form>
-                                <select class="wishlist_dropdown">
-                                    <option value="" disabled selected>--Select--</option>
-                                    <option value="Mer"> 4GB+64GB
-                                    </option>
-                                    <option value="Audi"> 6GB+128GB
-                                    </option>
-                                    <option value="Skoda">8GB+256GB
-                                    </option>
-                                </select>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="select_dropdown_1">
-                        <div>
-                            <p class="select_varient">Select Color</p>
-                            <form>
-                                <select class="wishlist_dropdown">
-                                    <option value="" disabled selected>--Select--</option>
-                                    <option value="Mer">Black
-                                    </option>
-                                    <option value="Audi"> Blue
-                                    </option>
-                                    <option value="Skoda">White
-                                    </option>
-                                </select>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+
+  <!-- amazon and all product -->
+  <ul class="accordian">
+    <li>
+      <label for="first"><img src="image/amazon_logo.png" class="image_amazon"><span><img
+            src="image/Expand_right.png" class="expand_right"> </span>
+      </label>
+      <input type="radio" name="accordian" id="first">
+      <div class="content">
+        <div class="contFlashSale">
+          <div class="amazon_content">
+            <img src="image/Rectangle 2773 (1).png" class="onepluse_phone_img">
+          </div>
+          <div class="amazon_main_content">
+            <div class="flash_product_desc">
+              <span class="one_Pluse">OnePlus 5T</span>
+              <p class="one_plus_time">Starts in: <span class="oneplus_number"> 01d : 05h :
+                  20m</span></p>
             </div>
-        </li>
-    </ul>
+            <div class="dropdown_choose">
+              <div class="select_dropdown">
+                 <div>
+                  <p class="select_varient">Select Varient</p>
+                  <form>
+                    <select class="wishlist_dropdown">
+                      <option value="" disabled selected>--Select--</option>
+                      <option value="Mer"> 4GB+64GB</option>
+                      <option value="Audi"> 6GB+128GB</option>
+                      <option value="Skoda">8GB+256GB</option>
+                    </select>
+                  </form>
+                 </div> 
+              </div>
+              <div class="select_dropdown">
+                <div>
+                 <p class="select_varient">Select Varient</p>
+                 <form>
+                   <select class="wishlist_dropdown">
+                     <option value="" disabled selected>--Select--</option>
+                     <option value="Mer"> 4GB+64GB</option>
+                     <option value="Audi"> 6GB+128GB</option>
+                     <option value="Skoda">8GB+256GB</option>
+                   </select>
+                 </form>
+                </div> 
+             </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- amazon product end -->
+
+
+  <!-- subscribed product -->
+
+  <ul class="accordian">
+    <li>
+      <label for="second">
+        <p class="subscribed_spn">Subscribed</p>
+        <img src="image/Expand_right.png" class="expand_right">
+      </label>
+      <input type="radio" name="accordian" id="second">
+      <div class="content">
+        <!-- without edit box -->
+        <div class="contFlashSale">
+          <div class="amazon_content">
+            <img src="image/Rectangle 2773 (1).png" class="onepluse_phone_img">
+          </div>
+          <div class="amazon_main_content">
+            <div class="flash_product_desc">
+              <div class="subs_desc_logo">
+                <span class="one_Pluse">OnePlus 5T</span>
+                <div class="subscribed_comp_logo">
+                  <img src="image/amazon.png" class="subs_desc_img" alt="">
+                </div>
+              </div>
+              <p class="one_plus_time">Starts in: <span class="oneplus_number"> 01d : 05h :
+                  20m</span></p>
+            </div>
+            <div class="btn_subs_flash">
+              <button class="edit_subs">Edit</button>
+              <button class="remove_subd">Remove</button>
+            </div>
+        </div>
+      </div>
+
+      <!-- with edit box -->
+      <div class="contFlashSale">
+        <div class="amazon_content">
+          <img src="image/Rectangle 2773 (1).png" class="onepluse_phone_img">
+        </div>
+        <div class="amazon_main_content">
+          <div class="flash_product_desc">
+            <div class="subs_desc_logo">
+              <span class="one_Pluse">OnePlus 5T</span>
+              <div class="subscribed_comp_logo">
+                <img src="image/amazon.png" class="subs_desc_img" alt="">
+              </div>
+            </div>
+            <p class="one_plus_time">Starts in: <span class="oneplus_number"> 01d : 05h :
+                20m</span></p>
+          </div>
+          <div class="dropdown_choose">
+            <div class="select_dropdown">
+               <div>
+                <p class="select_varient">Select Varient</p>
+                <form>
+                  <select class="wishlist_dropdown">
+                    <option value="" disabled selected>--Select--</option>
+                    <option value="Mer"> 4GB+64GB</option>
+                    <option value="Audi"> 6GB+128GB</option>
+                    <option value="Skoda">8GB+256GB</option>
+                  </select>
+                </form>
+               </div> 
+            </div>
+            <div class="select_dropdown">
+              <div>
+               <p class="select_varient">Select Varient</p>
+               <form>
+                 <select class="wishlist_dropdown">
+                   <option value="" disabled selected>--Select--</option>
+                   <option value="Mer"> 4GB+64GB</option>
+                   <option value="Audi"> 6GB+128GB</option>
+                   <option value="Skoda">8GB+256GB</option>
+                 </select>
+               </form>
+              </div> 
+           </div>
+           <button class="remove_subd1">Remove</button>
+          </div>
+      </div>
+    </div>
+    </li>
+  </ul>    
+
+  <!-- subscribed product end -->
 </body>
 
 </html>
