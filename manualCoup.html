@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .manualCoup {
+        width: 650px;
+        height: 560px;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+
+    .manualCoupNav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .manualCoupLogo {
+        width: 103px;
+        height: 26px;
+    }
+
+    .manualCoupCross {
+        width: 22px;
+        height: 22px;
+    }
+
+    .manualCoupHeading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 34px;
+    }
+
+    .manualCoupHeading_spn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        text-transform: uppercase;
+        color: #0E1D4A;
+    }
+
+    /* table */
+    table {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    .btnscoupns {
+        display: flex;
+    }
+
+    .manualCoupTable {
+        padding-top: 18px;
+        padding-bottom: 13px;
+        width: 582px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .manualCoupContent {
+        width: 582px;
+        padding-left: 73px;
+        padding-top: 13px;
+    }
+
+    .TableHeading {
+        width: 100px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #2158D7;
+    }
+
+    .TxtAlign {
+        width: 100px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #0E1D4A;
+    }
+
+    .coupnTableCoup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .couponName {
+        width: 146px;
+        height: 38px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.12);
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-transform: capitalize;
+        color: #0E1D4A;
+        border: none;
+        margin-right: 8px;
+    }
+
+    .couponsApply {
+        width: 83px;
+        height: 38px;
+        background: #3E6EDC;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #FBDD01;
+        border: none;
+    }
+
+    .code {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #2158D7;
+    }
+</style>
+
+<body>
+    <div class="manualCoup">
+        <div class="manualCoupNav">
+            <img src="image/flipshope1.png" class="manualCoupLogo">
+            <img src="image/Close_round.png" class="manualCoupCross">
+        </div>
+        <div class="manualCoupHeading">
+            <span class="manualCoupHeading_spn">Available coupons for your cart</span>
+        </div>
+        <div class="coupnTableCoup">
+
+            <div class="manualCoupTable">
+                <table cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th class="TableHeading">Discount</th>
+                            <th class="TableHeading">Cashback</th>
+                            <th class="TableHeading">Total</th>
+                            <th class="code">Code</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="manualCoupContent">
+                <table cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td class="TxtAlign">400</td>
+                            <td class="TxtAlign">0</td>
+                            <td class="TxtAlign">400</td>
+                            <td class="btnscoupns">
+                                <button class="couponName">MACAFFINE500</button>
+                                <button class="couponsApply">Apply</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

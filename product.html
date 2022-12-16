@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .cart_container {
+    width: 310px;
+    height: 112px;
+    margin-top: 16px;
+    background: #FFFFFF;
+    border-radius: 6px;
+    display: flex;
+}
+
+.invictus_image_container {
+    width: 107px;
+    height: 112px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.invictus_image_heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: #0E1D4A;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.invictus_image_price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invictus_img_rs {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #3E4A6F;
+}
+
+.invictus_discount {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    text-decoration-line: line-through;
+    color: #3E4A6F;
+}
+
+.wishlist_price_label_dropdown{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 26px;
+}
+
+.notify_choose{
+    width: 304px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(62, 74, 111, 0.75);
+}
+
+.please_choose{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #0E1D4A;
+    padding-left: 8px;
+}
+
+.btn_arrow{
+    margin-left: 65px;
+}
+
+.auto_apply_btn {
+    width: 304px;
+    height: 36px;
+    background: #3E6EDC;
+    border-radius: 6px;
+    border: none;
+    margin-top: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.price_graph_box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_graph_box_heading {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #0E1D4A;
+    margin-top: 18px;
+}
+
+.price_warning {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 26px;
+}
+
+.price_7day {
+    width: 24px;
+    height: 20px;
+    background: #2158D7;
+    border-radius: 2px;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    color: #FFFFFF;
+    margin-left: 8px;
+}
+
+</style>
+<body>
+      <!-- product info -->
+        <div class="cart_container">
+            <div>
+                <img src="image/Rectangle 2792.png" class="invictus_image_container">
+            </div>
+            <div>
+                <span class="invictus_image_heading">INVICTUS Man cascual shoes, Lather water proof sfhu, jdhvrusnm </span>
+                <div class="invictus_image_price">
+                    <div>
+                        <span class="invictus_img_rs">₹1499</span>
+                        <span class="invictus_discount">₹2999</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- button of choose -->
+        <div class="wishlist_price_label_dropdown">
+            <button class="notify_choose">Notify When: <span class="please_choose">Please choose</span> <img src="image/Expand_right.png" class="btn_arrow"></button>
+        </div>
+        <!-- button of save item -->
+        <div class="logout_btn_container">
+            <button class="auto_apply_btn"> Save Item</button>
+        </div>
+        <!-- graph heading -->
+        <div class="price_graph_box">
+            <div class="price_graph_box_heading">
+                <span>Price Graph</span>
+            </div>
+            <div class="price_warning">
+                <button class="price_7day">7d</button>
+                <button class="price_7day">45d</button>
+            </div>
+        </div>
+</body>
+</html>

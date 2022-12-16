@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <style>
+    .container_mg{
+        width: 350px;
+    }
     .header_mg {
         display: flex;
         justify-content: space-between;
@@ -53,7 +56,7 @@
         color: #0E1D4A;
     }
 
-    .paragraph_flipshope {
+    .paragraph_flipshope_spn {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
@@ -61,6 +64,11 @@
         text-align: center;
         color: rgba(34, 56, 122, 0.75);
         text-align: center;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
     }
 
     .coupons_flipshope {
@@ -99,6 +107,7 @@
         align-self: center;
         color: #FFFFFF;
         margin-top: 36px;
+        cursor: pointer;
     }
 
     .auto {
@@ -133,7 +142,7 @@
                 <span>COUPONS FOUND!</span>
             </div>
             <div class="paragraph_flipshope">
-                <span>We searched high and low to make sure you’re not missing out on any coupons or deals.</span>
+                <span class="paragraph_flipshope_spn">We searched high and low to make sure you’re not missing out on any coupons or deals.</span>
             </div>
         </div>
         <div class="coupons_flipshope">

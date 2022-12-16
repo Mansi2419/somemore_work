@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    .coupApply {
+        width: 444px;
+        height: 452px;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+
+    .coupApplyClose {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: 14px;
+        top: 12px;
+    }
+
+    .couponClose {
+        position: relative;
+    }
+
+    .mainCouponcont {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 65px;
+    }
+
+    .youSaved_Spn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #0E1D4A;
+    }
+
+    .couponsApplyDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .number_spn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 66px;
+        line-height: 99px;
+        color: #E2341C;
+    }
+
+    .originalPrice {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: rgba(14, 29, 74, 0.45);
+        padding-right: 28px;
+    }
+
+    .originalPrice_spn {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 33px;
+        color: rgba(14, 29, 74, 0.45);
+    }
+
+    .withFlipshopeDiv {
+        padding-top: 8px;
+    }
+
+    .withFlipshope_price {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 33px;
+        color: #2158D7;
+    }
+
+    .couponsAutoApply {
+        padding-top: 43px;
+    }
+
+    .coupAuto_apply_btn {
+        width: 298px;
+        height: 45px;
+        background: #2158D7;
+        border-radius: 30px;
+        border: none;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FBDD01;
+        cursor: pointer;
+    }
+    .trymoreCoupons{
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration-line: underline;
+        color: rgba(14, 29, 74, 0.5);
+        padding-top: 12px;
+    }
+</style>
+
+<body>
+    <div class="coupApply">
+        <div class="couponClose">
+            <img src="image/Close_round.png" class="coupApplyClose">
+        </div>
+        <div class="mainCouponcont">
+            <div class="couponsApplyDiv">
+                <span class="youSaved_Spn">You Saved</span>
+                <span class="number_spn">₹ 350</span>
+            </div>
+            <div class="couponsOriginalPrc">
+                <span class="originalPrice">Original Price</span>
+                <span class="originalPrice_spn">₹10,350</span>
+            </div>
+            <div class="withFlipshopeDiv">
+                <span class="originalPrice">With Flipshope</span>
+                <span class="withFlipshope_price">₹10,000</span>
+            </div>
+            <div class="couponsAutoApply">
+                <button class="coupAuto_apply_btn">
+                    Continue to Checkout
+                </button>
+            </div>
+            <span class="trymoreCoupons">Try 10 more coupons</span>
+        </div>
+    </div>
+</body>
+
+</html>
