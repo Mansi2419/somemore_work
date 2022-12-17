@@ -157,6 +157,79 @@
   /* amazon and all product */
 
   /* subscribed product */
+  .dropdown_choose {
+    display: flex;
+    margin-top: 8px;
+  }
+  .accordian {
+    width: 336px;
+    padding: 0;
+  }
+
+  .accordian li {
+    list-style: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+  }
+
+  .accordian li label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    border: none;
+    width: 336px;
+    height: 36px;
+  }
+  .accordian label+input[type="radio"] {
+    display: none;
+  }
+
+  .accordian .content {
+    padding: 0 4px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+
+  .accordian label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+  }
+
+  .wishlist_dropdown {
+    width: 69px;
+    height: 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    text-transform: capitalize;
+    color: rgba(14, 29, 74, 0.5);
+    border: 0.5px solid rgba(33, 88, 215, 0.75);
+    border-radius: 2px;
+    margin-right: 12px;
+  }
+
+  .select_varient {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #0E1D4A;
+    margin: 0;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+    outline: none;
+  }
 
   .subscribed_spn {
     font-family: 'Poppins';
@@ -165,6 +238,42 @@
     font-size: 16px;
     color: #0E1D4A;
     margin: 6px 8px;
+  }
+  .one_Pluse {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #0E1D4A;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .one_plus_time {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #353232;
+    margin: 0;
+  }
+
+  .oneplus_number {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    text-transform: capitalize;
+    color: #D01313;
+  }
+
+  .amazon_content {
+    width: 106px;
+    height: 100px;
   }
 
   .subscribed_comp_logo {
@@ -237,6 +346,28 @@
     width: 336px;
   }
 
+  .expand_right {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    margin-top: 5px;
+  }
+
+  .contFlashSale {
+    display: flex;
+  }
+
+  .amazon_main_content {
+    width: 222px;
+    margin-top: 7px;
+    margin-left: 12px;
+  }
+  .onepluse_phone_img {
+    width: 102px;
+    height: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
   /* subscribed product */
 </style>
 
