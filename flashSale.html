@@ -11,8 +11,7 @@
   <title>Document</title>
 </head>
 <style>
-
-/* amazon and all product */
+  /* amazon and all product */
   .accordian {
     width: 336px;
     padding: 0;
@@ -56,9 +55,10 @@
     max-height: 400px;
   }
 
-  .contFlashSale{
+  .contFlashSale {
     display: flex;
   }
+
   .onepluse_phone_img {
     width: 102px;
     height: 90px;
@@ -158,7 +158,7 @@
 
   /* subscribed product */
 
-  .subscribed_spn{
+  .subscribed_spn {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -167,7 +167,7 @@
     margin: 6px 8px;
   }
 
-  .subscribed_comp_logo{
+  .subscribed_comp_logo {
     width: 48px;
     height: 20px;
     background: #FFFFFF;
@@ -179,21 +179,21 @@
     align-items: center;
   }
 
-  .subs_desc_logo{
+  .subs_desc_logo {
     display: flex;
     justify-content: space-between;
   }
 
-  .subs_desc_img{
+  .subs_desc_img {
     width: 37px;
     height: 11px;
   }
 
-  .btn_subs_flash{
+  .btn_subs_flash {
     margin-top: 18px;
   }
 
-  .edit_subs{
+  .edit_subs {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -205,7 +205,7 @@
     background: none;
   }
 
-  .remove_subd{
+  .remove_subd {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -217,7 +217,7 @@
     background: none;
   }
 
-  .remove_subd1{
+  .remove_subd1 {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -229,23 +229,24 @@
     background: none;
     margin-top: 17px;
   }
-  .subscribed{
+
+  .subscribed {
     border-bottom: 1px solid #E0E0E0;
     display: flex;
     justify-content: space-between;
     width: 336px;
   }
-  /* subscribed product */
 
+  /* subscribed product */
 </style>
 
 <body>
 
-  <!-- amazon and all product -->
+  <!-- == Unsubscribed card == -->
   <ul class="accordian">
     <li>
-      <label for="first"><img src="image/amazon_logo.png" class="image_amazon"><span><img
-            src="image/Expand_right.png" class="expand_right"> </span>
+      <label for="first"><img src="image/amazon_logo.png" class="image_amazon"><span><img src="image/Expand_right.png"
+            class="expand_right"> </span>
       </label>
       <input type="radio" name="accordian" id="first">
       <div class="content">
@@ -261,7 +262,7 @@
             </div>
             <div class="dropdown_choose">
               <div class="select_dropdown">
-                 <div>
+                <div>
                   <p class="select_varient">Select Varient</p>
                   <form>
                     <select class="wishlist_dropdown">
@@ -271,31 +272,31 @@
                       <option value="Skoda">8GB+256GB</option>
                     </select>
                   </form>
-                 </div> 
+                </div>
               </div>
               <div class="select_dropdown">
                 <div>
-                 <p class="select_varient">Select Varient</p>
-                 <form>
-                   <select class="wishlist_dropdown">
-                     <option value="" disabled selected>--Select--</option>
-                     <option value="Mer"> 4GB+64GB</option>
-                     <option value="Audi"> 6GB+128GB</option>
-                     <option value="Skoda">8GB+256GB</option>
-                   </select>
-                 </form>
-                </div> 
-             </div>
+                  <p class="select_varient">Select Varient</p>
+                  <form>
+                    <select class="wishlist_dropdown">
+                      <option value="" disabled selected>--Select--</option>
+                      <option value="Mer"> 4GB+64GB</option>
+                      <option value="Audi"> 6GB+128GB</option>
+                      <option value="Skoda">8GB+256GB</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </li>
   </ul>
-  <!-- amazon product end -->
+  <!-- == unsubscribed card == -->
 
 
-  <!-- subscribed product -->
+  <!-- == subscribed product == -->
 
   <ul class="accordian">
     <li>
@@ -307,7 +308,7 @@
       </label>
       <input type="radio" name="accordian" id="second">
       <div class="content">
-        <!-- without edit box -->
+        <!-- == subscribed cards == -->
         <div class="contFlashSale">
           <div class="amazon_content">
             <img src="image/Rectangle 2773 (1).png" class="onepluse_phone_img">
@@ -328,9 +329,9 @@
               <button class="remove_subd">Remove</button>
             </div>
             <!-- on-click edit -->
-            <div class="dropdown_choose" >
+            <div class="dropdown_choose">
               <div class="select_dropdown">
-                 <div>
+                <div>
                   <p class="select_varient">Select Varient</p>
                   <form>
                     <select class="wishlist_dropdown">
@@ -340,27 +341,30 @@
                       <option value="Skoda">8GB+256GB</option>
                     </select>
                   </form>
-                 </div> 
+                </div>
               </div>
               <div class="select_dropdown">
                 <div>
-                 <p class="select_varient">Select Varient</p>
-                 <form>
-                   <select class="wishlist_dropdown">
-                     <option value="" disabled selected>--Select--</option>
-                     <option value="Mer"> 4GB+64GB</option>
-                     <option value="Audi"> 6GB+128GB</option>
-                     <option value="Skoda">8GB+256GB</option>
-                   </select>
-                 </form>
-                </div> 
-             </div>
-             <button class="remove_subd1">Remove</button>
+                  <p class="select_varient">Select Varient</p>
+                  <form>
+                    <select class="wishlist_dropdown">
+                      <option value="" disabled selected>--Select--</option>
+                      <option value="Mer"> 4GB+64GB</option>
+                      <option value="Audi"> 6GB+128GB</option>
+                      <option value="Skoda">8GB+256GB</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              <button class="remove_subd1">Remove</button>
             </div>
             <!-- on-click edit -->
+          </div>
         </div>
       </div>
-  <!-- subscribed product end -->
+    </li>
+  </ul>
+  <!-- == subscribed cards == -->
 </body>
 
 </html>
